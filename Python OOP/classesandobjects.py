@@ -1,3 +1,4 @@
+#1
 #class and method(function called a method when it is associated with a object)
 
 class Computer:
