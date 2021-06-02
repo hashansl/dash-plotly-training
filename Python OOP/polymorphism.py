@@ -1,25 +1,25 @@
 #9
+# Polymorephism 4 types in python -- > Duck Typing, Operator Overloading, Method Overloading, Method Overridding
 
-class A:
-    #ConstructorA
-    def __init__(self):
-        print("in init A")
+class PyCharm:
 
-    def feature1(self):
-        print("Feature 1 is working")
+    def execute(self):
+        print("Compiling")
+        print("Running")
 
-    def feature2(self):
-        print("Feature 2 is working")
+class MyEditor:
 
+    def execute(self):
+        print("Spell Check")
+        print("Convent")
 
-class B(A):
-    # ConstructorB
-    def __init__(self):
-        super().__init__() #call init A from init B
-        print("in init B")
+class Laptop:
 
-    def feature3(self):
-        print("Feature 3 is working")
+    #here duck typing happens-->
+    def code(self,ide):
+        ide.execute()
 
-    def feature4(self):
-        print("Feature 4 is working")
+ide =PyCharm()
+
+lap1 = Laptop()
+lap1.code(ide)
